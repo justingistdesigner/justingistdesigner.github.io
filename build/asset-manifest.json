@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.a09dcdf8.css",
-    "main.js": "/static/js/main.5247767a.js",
-    "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
+    "main.css": "/static/css/main.be0cc53c.css",
+    "main.js": "/static/js/main.be3c59fa.js",
+    "static/js/453.5d79306b.chunk.js": "/static/js/453.5d79306b.chunk.js",
     "static/media/Three-Phones-Mockup.png": "/static/media/Three-Phones-Mockup.2fdaab77f52ef627bf4d.png",
     "static/media/Racing-Mockup.png": "/static/media/Racing-Mockup.4f1ed017479257898d83.png",
     "static/media/step_nine.png": "/static/media/step_nine.3e801c2bbb1d6d1e7c26.png",
@@ -56,12 +56,12 @@
     "static/media/Squiggly.svg": "/static/media/Squiggly.c5ad318c4e06c74f7ffe3e47e5bfcbd1.svg",
     "static/media/microsoft-windows-22.svg": "/static/media/microsoft-windows-22.18c1acd8d78bbec10356513ba98a0d95.svg",
     "static/media/textbox.svg": "/static/media/textbox.cb172bda41092598c6840b0fb7fdf475.svg",
-    "main.a09dcdf8.css.map": "/static/css/main.a09dcdf8.css.map",
-    "main.5247767a.js.map": "/static/js/main.5247767a.js.map",
-    "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
+    "main.be0cc53c.css.map": "/static/css/main.be0cc53c.css.map",
+    "main.be3c59fa.js.map": "/static/js/main.be3c59fa.js.map",
+    "453.5d79306b.chunk.js.map": "/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a09dcdf8.css",
-    "static/js/main.5247767a.js"
+    "static/css/main.be0cc53c.css",
+    "static/js/main.be3c59fa.js"
   ]
 }

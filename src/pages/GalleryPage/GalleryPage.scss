@@ -1,6 +1,8 @@
 #gallery-image-container {
     margin-top: 48px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
     margin-bottom: 48px;
     .flex-column {
         width: fit-content;
@@ -9,8 +11,12 @@
 }
 
 #gallery-image-selector {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 67%;
     height: 100%;
+    .text-body {
+        color: black;
+    }
     .disabled {
         cursor: not-allowed;
         svg {
@@ -32,7 +38,7 @@
         width: 100%;
         max-width: 880px;
         min-height: fit-content;
-        max-height: 80%;
+        height: 60vh;
         display: flex;
         justify-content: center;
         img {
@@ -46,5 +52,10 @@
     .flex {
         justify-content: center;
         flex-wrap: nowrap;
+    }
+    #button-layout {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
     }
 }

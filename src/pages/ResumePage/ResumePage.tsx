@@ -5,6 +5,7 @@ import hallowImage from "../../assets/hallow.avif";
 import threePhones from "../../assets/Three-Phones-Mockup.png";
 import racingPhones from "../../assets/Racing-Mockup.png";
 import dashboardMockup from "../../assets/Dashboard_mockup.png";
+import sonarMockup from "../../assets/sonar_2.png";
 import { GlobalThemes } from "../../ThemeManager";
 import ColumnLayout from "../../components/Layouts/ColumnLayout";
 import Headline from "../../components/Text/Headline";
@@ -19,11 +20,15 @@ import { useNavigate } from "react-router-dom";
 // const ThreeDComponentLazy = React.lazy(() => import("./GlobeElement"));
 
 const experienceList: any[] = [
+  'Taken complex data sets and visualized them in, easy to use, custom made charts & data visualizers. Creating custom viewing functions and mechanics that allow users to drill further into the data, and compare relevant data points.',
+  
+  'Given 2 - 4 weeks per website, designed Figma prototypes, presented to the C-Suite team and executed huge code and design refactors within the time frame.',
+
   "Designed, developed & animated Forms, Dashboards, Components and Walkthroughs that interfaced with Facebook, Instagram, Amazon & TikTok Advertising APIs, utilizing the data provided to allow the user to adjust & create Advertising Campaigns for clients to distribute to local chains around the world.",
-  `Refactored old Meta Advertising Campaign Editor from KnockoutJS to React, while also improving the user experience, visual design & animating each of the sections.`,
-  `Designed Figma Prototypes of the entire UI, creating variations of styles & themes, to present to the product team & give presentations to the CEO.`,
-  "Formalized TigerPistol’s design standards across three Apps, by creating a convenient component library for all three apps to utilize. Also did design reviews before each piece of code was sent into production for the entire team, assisting with coding where needed.",
-  "Developed using SyncFusion and C#, I created a Tax Document generator for a Livanta, a Global Medical Company, saving the CFO a week of time every month and was used in Government Audits."
+
+  'Formalized TigerPistol’s design standards across three Apps, by creating a convenient component library for all apps to utilize. Lead design reviews for all Ui features and changes.',
+
+  'Utilizing SyncFusion and C#, created a Tax Document generator for Livanta, a Global Medical Company, that was used in Government Audits and saved a week of staff time',
 ];
 const languagesList: string[] = [
   "JavaScript",
@@ -190,21 +195,35 @@ const ResumePage = () => {
             </Headline>
           </RowLayout>
         </ColumnLayout>
-        <img 
-          loading="lazy" 
-          className="dashboardImage image" 
-          src={threePhones}
-        />
-        <img 
-          loading="lazy" 
-          className="dashboardImage image" 
-          src={racingPhones} 
-        />
-        <img 
-          loading="lazy" 
-          className="dashboardImage image" 
-          src={dashboardMockup} 
-        />
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'auto auto',
+          gap: 24
+        }}>
+          <img 
+            loading="lazy" 
+            className="dashboardImage image" 
+            src={dashboardMockup} 
+          />
+          <img 
+            loading="lazy" 
+            className="dashboardImage image" 
+            src={sonarMockup} 
+          />
+          <img 
+            loading="lazy" 
+            className="dashboardImage image" 
+            src={threePhones}
+          />
+          <img 
+            loading="lazy" 
+            className="dashboardImage image" 
+            src={racingPhones} 
+          />
+        </div>
+        <ColumnLayout gap={32} style={{
+          alignItems: 'center'
+        }}>
         <Headline
           id="projects"
           data-walkthrough-step="7"
@@ -254,6 +273,7 @@ const ResumePage = () => {
             className="dashboardImage image"  
             src={hallowImage}
           />
+        </ColumnLayout>
         </ColumnLayout>
 
         <ColumnLayout gap={16} style={{ alignItems: 'center' }}

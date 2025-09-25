@@ -2,8 +2,8 @@
     --animation-time-1: 0.167s;
     --animation-time-2: 0.267s;
     --animation-time-3: 0.367s;
-    --font-h1: 48px;
-    --font-h2: 36px;
+    --font-h1: 40px;
+    --font-h2: 32px;
     --font-h3: 24px;
     --font-h4: 20px;
     --font-h5: 18px;
@@ -19,8 +19,6 @@
     --layer-4: 400;
     --layer-5: 500;
     .Resume, .Contact, .SpaceNews, .Gallery {
-        --font-h1: 52px;
-        --font-body: 18px;
         // Generic colors
         --font: "Poppins", sans-serif;
         --theme-primary: #6b71e2;
@@ -78,7 +76,7 @@
         --background-secondary: #222;
         --background-teritary: linear-gradient(0deg, #74e2ff,#d8f6ff 40%);
         --background-modal: #ffffff;
-        --background-card: #030108d3;
+        --background-card: #020513d3;
         --background-modal-overlay: #00000071;
         --background-account: var(--theme-gradient);
         --background-panel: #ffffff;
@@ -817,11 +815,6 @@
         --misc-9: #32676e;
     }
     .Designer {
-        --font-h1: 80px;
-        --font-h2: 60px;
-        --font-h3: 40px;
-        --font-h4: 20px;
-        --font-h5: 18px;
         --font-sub-headline: 20px;
         --font-body: 18px;
         // Generic colors
@@ -984,8 +977,6 @@
         
     }
     .Burgers {
-        --font-h1: 52px;
-        --font-body: 18px;
         // Generic colors
         --font: "Poppins", sans-serif;
         --theme-primary: #6b71e2;
@@ -1066,8 +1057,6 @@
         --misc-9: #dc7cff;
     }
     .DnD {
-        --font-h1: 40px;
-        --font-body: 18px;
         // Generic colors
         --font: "Poppins", sans-serif;
         --theme-primary: #6b71e2;
@@ -1149,13 +1138,6 @@
         --misc-9: #dc7cff;
     }
     .Social {
-        --font-h1: 48px;
-        --font-h2: 36px;
-        --font-h3: 32px;
-        --font-h4: 26px;
-        --font-h5: 24px;
-        --font-sub-headline: 22px;
-        --font-body: 16px;
         // Generic colors
         --font: "Poppins", sans-serif;
         --theme-primary: #c7bee6;

@@ -210,10 +210,10 @@ const GalleryPage = () => {
       </Modal>
       <ColumnLayout id="gallery-page" className="centerContent" style={{ marginTop: 80 }}>
           <Headline>Gallery</Headline>
-          <Body style={{ maxWidth: 620 }}>
+          <Body style={{ maxWidth: 800 }}>
             Here is a collection of mockups and final renders from various projects. Click to enlarge and get further description of the project it was used on!
           </Body>
-          <RowLayout gap={24} id="gallery-image-container">
+          <div id="gallery-image-container">
             {images.map((i, index) => (
               <Button 
                 key={i.label}
@@ -236,13 +236,13 @@ const GalleryPage = () => {
                       height: imageHeight
                     }}
                   />
-                  <Headline size={3}>
+                  <Headline size={4}>
                     {i.label}
                   </Headline>
                 </ColumnLayout>
               </Button>
             ))}
-          </RowLayout>
+          </div>
       </ColumnLayout>
     </>
   );
@@ -267,36 +267,39 @@ const GalleryImageSelector = (image: iGalleryImage) => {
   const diableNext = page === images.length - 1 ? 'disabled' : '';
   const enableSelectors = images.length > 1;
   return (
-    <ColumnLayout id="gallery-image-selector" gap={8} className={`${enableSelectors ? 'max-height' : ''}`}>
+    <ColumnLayout id="gallery-image-selector" gap={16}>
       <ColumnLayout style={{ maxHeight: '80%' }}>
         <Headline secondary size={3}>{images[page].label}</Headline>
-        {loading ? <Loading useLoadingAnimation={0} /> : (
+        <Body>{images[page].description}</Body>
+      </ColumnLayout>
+      <ColumnLayout style={{
+        height: 'min-content',
+        justifyContent: 'space-between'
+      }}>
           <div className="image-container">
+        {loading ? <Loading useLoadingAnimation={0} /> : (
             <img
               src={images[page].src}
               alt={images[page].label}
               className={className}
             />
-          </div>
         )}
-      </ColumnLayout>
-      <ColumnLayout>
-        <Headline secondary size={5}>{images[page].description}</Headline>
+          </div>
         {enableSelectors && (
-          <RowLayout id="button-layout" layoutClass="flexSB">
+          <div id="button-layout">
             <Button
               className={disablePrevious}
               onClick={() => changePage(false)}
             >
-              <Icon icon="ChevronLeft" fontSize={64} />
+              <Icon icon="ChevronLeft" fontSize={32} />
             </Button>
             <Button
               className={diableNext}
               onClick={() => changePage(true)}
             >
-              <Icon icon="ChevronRight" fontSize={64} />
+              <Icon icon="ChevronRight" fontSize={32} />
             </Button>
-          </RowLayout>
+          </div>
         )}
       </ColumnLayout>
     </ColumnLayout>
